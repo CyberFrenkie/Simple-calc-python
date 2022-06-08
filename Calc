@@ -1,0 +1,30 @@
+start = input("Start? Y / N: ")
+while start == "y":
+    
+    
+    a=int(input("write first number: "))
+    op=input("choose operand")
+    b=int(input("write 2nd number: "))
+       
+    if op=="+":
+        print(a+b)
+        
+    elif op=="-":
+        print(a-b)
+        
+    elif op=="*":
+        print(a*b)
+    
+    elif op=="/":
+        if a != 0 and b !=0:
+            print(a/b)
+            
+        else:
+            print("you cant divide by zero")
+            
+        
+        
+    else:
+        print("invalid operand")   
+        
+    start = input("Continue? Y / N: ")
